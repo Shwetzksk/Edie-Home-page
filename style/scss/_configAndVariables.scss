@@ -1,0 +1,52 @@
+$gray-1: #333333;
+$gray-2: #4f4f4f;
+$gray-3: #828282;
+$gray-4: #bdbdbd;
+$gray-5: #a9a9a9;
+$gray-6: #f2f2f2;
+$blue: #2d9cdb;
+$green: #27ae60;
+$red: #eb5757;
+
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: $gray-1;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1273px;
+  }
+}
+
+//responsive fonts-size
+
+//------------ introduction -------------- //
+//------------ our services -------------- //
+//------------ previous projects -------------- //
+//------------ our team -------------- //
+//------------ testimonial -------------- //
+//------------ introduction -------------- //

@@ -1,0 +1,233 @@
+.introduction {
+  display: grid;
+  grid-template-columns: 2.5rem repeat(8, 1fr);
+  grid-template-rows: 1fr, 10fr, 1fr;
+  align-items: center;
+  margin: 3rem 0;
+}
+.introduction__text1 {
+  grid-column: 2/10;
+  grid-row: 1;
+
+  .heading {
+    font-size: 2.4em;
+  }
+}
+.customerComplain__link {
+  color: $blue;
+  font-size: 1.2rem;
+}
+.heading {
+  font-weight: map-get($font-weights, medium);
+  grid-column: 1/7;
+}
+.heroImage {
+  grid-column: 1/10;
+  grid-row: 2;
+
+  width: 100%;
+  margin: 1.3rem 0;
+  border-radius: 10px;
+}
+.introduction__text2 {
+  grid-column: 2/10;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  .heading {
+    font-size: 2.4em;
+  }
+  .purpose__text {
+    grid-column: 1/5;
+  }
+}
+.purpose__text {
+  color: $gray-2;
+  margin: 3rem 0;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  grid-column: 1/5;
+}
+.contactUs__text {
+  grid-column: 1/6;
+  margin: 1.5rem 0;
+  columns: $gray-3;
+  font-size: 1rem;
+  font-weight: map-get($font-weights, medium);
+}
+
+.email {
+  background-color: $gray-6;
+  width: fit-content;
+  display: flex;
+  border-radius: 8px;
+  grid-column: 1/7;
+}
+#email__input {
+  color: $gray-4;
+  background-color: $gray-6;
+  border: none;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+}
+#email__input:focus {
+  outline: none;
+}
+.btn {
+  color: $gray-6;
+  font-family: "Poppins", sans-serif;
+  background-color: $blue;
+  border: none;
+  padding: 0.5rem 1.8rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  margin: 3px;
+}
+.btn:focus {
+  outline: none;
+}
+.join__btn:active {
+  transform: scale(0.98);
+  transition: transform 0.5s ease-in 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(71, 71, 71, 0.15);
+}
+
+@media (min-width: 355px) {
+  .introduction__text1 {
+    .heading {
+      font-size: 2.8em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 2.8em;
+    }
+  }
+}
+@media (min-width: 456px) {
+  .introduction__text1 {
+    .heading {
+      font-size: 3em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 3em;
+    }
+  }
+}
+@media (min-width: 456px) {
+  .introduction__text1 {
+    .heading {
+      font-size: 3.3em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 3.3em;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .introduction {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr, 10fr, 1fr;
+    align-items: center;
+    margin: 3rem 0;
+  }
+  .customerComplain__link {
+    font-size: 1.8rem;
+  }
+  .introduction__text1 {
+    .heading {
+      font-size: 4em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 4em;
+    }
+  }
+  .purpose__text {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    grid-column: 1/3;
+  }
+
+  .contactUs__text {
+    font-size: 1.4rem;
+  }
+
+  #email__input {
+    font-size: 1.8rem;
+  }
+  .btn {
+    padding: 0.6rem 2.3rem;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    margin: 3px;
+  }
+}
+
+//landscape screens
+@media (max-width: 770px) {
+  .customerComplain__link {
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+  .purpose__text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    grid-column: 1/4;
+  }
+  .contactUs__text {
+    font-size: 1.4rem;
+  }
+
+  #email__input {
+    font-size: 1.8rem;
+  }
+  .btn {
+    padding: 0.6rem 2.3rem;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    margin: 3px;
+  }
+}
+//tablet
+@media (min-width: 768px) {
+}
+//desktop
+@media (min-width: 992px) {
+}
+
+//above 1200
+@media (min-width: 1230px) {
+  .introduction__text1 {
+    .heading {
+      font-size: 4.3em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 4.3em;
+    }
+  }
+}
+@media (min-width: 1283px) {
+  .introduction__text1 {
+    .heading {
+      font-size: 4.5em;
+    }
+  }
+  .introduction__text2 {
+    .heading {
+      font-size: 4.5em;
+    }
+  }
+}

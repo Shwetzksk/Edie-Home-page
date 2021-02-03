@@ -1,0 +1,129 @@
+.ourServices {
+  margin: 10rem 0;
+}
+.ourServices__heading {
+  font-size: 2.4rem;
+  margin: 0 2.5rem;
+  font-weight: map-get($font-weights, medium);
+}
+.card__container {
+  display: flex;
+  // flex-direction: column;
+  margin: 6rem 0;
+  // justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 34.1rem;
+  margin-bottom: 4rem;
+  border-radius: 15px;
+
+  &:hover {
+    box-shadow: 10px 0 30px #b3b1b1;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+.icon {
+  width: 67px;
+  height: 67px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 3rem 2.5rem;
+}
+.icon__uxui {
+  background-color: $blue;
+}
+.icon__frontend {
+  background-color: $green;
+}
+.icon__backend {
+  background-color: $red;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+  cursor: default;
+}
+.card__headerText {
+  font-size: 2.4rem;
+  margin: 1.8rem 2.5rem;
+  font-weight: map-get($font-weights, bold);
+}
+.card__bodyText {
+  grid-row: 5;
+  font-size: 1.6rem;
+  font-weight: map-get($font-weights, regular);
+  margin: 2rem 2.5rem;
+}
+.getStarted__btn {
+  grid-row: 7;
+  font-size: 1.6rem;
+  font-weight: map-get($font-weights, medium);
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #e0e0e0;
+  color: $gray-3;
+  margin: 1rem 2.5rem 4rem 2.5rem;
+
+  &:hover {
+    transform: translate(20px, 30px, 15px);
+    box-shadow: 8px 5px 10px #b3bfc5;
+  }
+  &:active {
+    box-shadow: 0 0 0 #9dbfd3;
+    transform: translate(-14px, -30px, -20px);
+  }
+}
+.getStarted__btn :focus {
+  outline: none;
+}
+.getStarted__btn:hover {
+  background-color: $blue;
+  color: #ffffff;
+}
+
+//ladscape
+@media (min-width: 576px) {
+  .ourServices {
+    // margin: 15rem 2.5rem;
+    margin: 15rem 0 10rem 0;
+    // display: grid;
+    // grid-template-columns: 3rem repeat(8, 1fr);
+  }
+  .ourServices__heading {
+    font-size: 3.2rem;
+    margin: 0;
+    // grid-column: 2/8;
+  }
+  .card__container {
+    justify-content: space-between;
+    // grid-column: 2/10;
+  }
+}
+//tablet
+@media (min-width: 768px) {
+  .ourServices__heading {
+    font-size: 3.6rem;
+  }
+  .card__container {
+    justify-content: space-between;
+    // grid-column: 2/9;
+  }
+}
+//desktop
+@media (min-width: 992px) {
+  // .ourServices {
+  //   grid-template-columns: 4rem repeat(8, 1fr);
+  // }
+}
+
+//above 1200
+@media (min-width: 1200px) {
+  // .card__container {
+  //   justify-content: space-around;
+  // }
+}

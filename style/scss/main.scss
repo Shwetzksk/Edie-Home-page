@@ -1,0 +1,102 @@
+@import "./configAndVariables";
+@import "./navbar";
+@import "./introduction";
+@import "./ourservices";
+@import "./previousproject";
+@import "./ourteamAndTestimonial";
+
+.hidden {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+footer {
+  background-color: #100e1d;
+  padding: 3rem 0;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  color: $gray-6;
+}
+.footer__nav {
+  list-style: none;
+  margin: 3.5rem 0;
+  font-size: 1.8rem;
+  font-weight: map-get($font-weights, regular);
+}
+.nav__link {
+  color: $gray-6;
+  text-decoration: none;
+}
+.socialMedia {
+  margin: 3.5rem 0;
+}
+.logoNav__text {
+  font-size: 3.6rem;
+}
+.socialMedia__handle {
+  width: 2.4rem;
+  margin-right: 0.5rem;
+}
+// .footer__email {
+//   flex: 1 1 0;
+// }
+.pageCredit {
+  color: $gray-5;
+  margin: 5rem 0 0 0;
+}
+.credit__text {
+  text-align: center;
+  font-weight: map-get($font-weights, semi-bold);
+  a {
+    color: $gray-5;
+  }
+}
+
+@media (min-width: 576px) {
+  main,
+  footer {
+    display: grid;
+    grid-template-columns: 4rem repeat(11, 1fr);
+  }
+  // footer {
+  //   place-items: center;
+  // }
+  .introduction {
+    grid-column: 1/13;
+  }
+  .ourServices,
+  .previousProjects,
+  .ourTeam,
+  .pageCredit {
+    grid-column: 2/12;
+  }
+  .testimoninal {
+    grid-column: 2/13;
+  }
+
+  .footer__container {
+    grid-column: 1/13;
+  }
+}
+//tablet
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+}
+//desktop
+@media (min-width: 992px) {
+}
+
+//above 1200
+@media (min-width: 1200px) {
+}
