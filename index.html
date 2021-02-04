@@ -27,9 +27,8 @@
     
   </head>
   <body>
-    <div class="container">
-
-      <nav class="nav-desktop ">
+     <nav class="nav-desktop  ">
+       <div class="container nav-desktop--container ">
         <div class="logo"><p class="logo__text">Edie</p></div>
         <ul class="navbar-ul">
           <li class="nav-item"><a href="#home" class="navbar__link">Home</a></li></li>
@@ -37,12 +36,12 @@
           <li class="nav-item"><a href="#ourWorks" class="navbar__link">Our Works</a></li>
           <li class="nav-item"><a href="#clients" class="navbar__link">Clients</a></li>
           <li class="nav-item"><a href="#contact" class="navbar__link">Contact</a></li>
-        </ul>
+        </ul></div>
       </nav>
-
       <nav class="nav-mobile ">
+        <div class="container nav-mobile--container">
          <div class="logo   mobile__logo"><p class="logo__text">Edie</p></div>
-        <div class="menuBackground hidden "></div> 
+          <div class="menuBackground hidden "></div> 
        
         <ul class="navbar-ul navbar-ul__mobile hidden">
           <li class="nav-item"><a class="navbar__link" href="#home"> Home</a></li></li>
@@ -54,11 +53,17 @@
         </ul>
         <div class ='menu'><span class="material-icons md-24">menu</span></div>
         <div class="exit hidden"><span class="material-icons">clear</span></div>
+        </div>
       </nav>
+    <div class="container">
+
+     
+
+      
 
       <main>
 
-        <section class="introduction" id="home">
+        <section class="introduction reveal-section" id="home">
 
           <div class="introduction__text1">
             <p class="customerComplain__link">Unhappy with your website?</p>
@@ -79,7 +84,7 @@
         </section>
 
 
-        <section class="ourServices" id="services">
+        <section class="ourServices reveal-section" id="services">
           
           <h3 class="ourServices__heading">We offer high <br> demand services  </h3>
 
@@ -111,7 +116,7 @@
         </section>
 
 
-        <section class="previousProjects" id='ourWorks'>
+        <section class="previousProjects reveal-section" id='ourWorks'>
 
           <h3 class="previousProjects__header">Good design means <br> good business</h3>
 
@@ -147,7 +152,7 @@
         </section>
 
 
-        <section class="ourTeam">
+        <section class="ourTeam reveal-section">
 
           <div class="ourTeam__text">
             <p class="intro__ourTeam">Meet the team</p>
@@ -164,7 +169,7 @@
         </section>
 
 
-        <section class="testimoninal" id ='clients'>
+        <section class="testimoninal  reveal-section" id ='clients'>
           <p class="testimony__text"> “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.” </p>
 
           <div class="customerDetail__card">
@@ -177,7 +182,7 @@
 
     </div>
 
-    <footer id='contact'>
+    <footer id='contact' class="reveal-section" >
       <div class="container footer__container">
         
         <ul class="footer__nav ">

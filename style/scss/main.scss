@@ -14,6 +14,13 @@
 .material-icons.md-24 {
   font-size: 24px;
 }
+.reveal-section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}
 
 footer {
   background-color: #100e1d;

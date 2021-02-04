@@ -2,14 +2,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+  height: 9rem;
+  width: 100%;
+}
+.nav---sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 .nav-desktop {
   display: none;
 }
+.nav-mobile--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .menuBackground {
   position: absolute;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
+
   width: 100vw;
   overflow-x: hidden;
   height: 200vh;
@@ -24,6 +36,7 @@ nav {
 .navbar-ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 
 .navbar-ul__mobile {
@@ -35,18 +48,14 @@ nav {
   left: 50%;
   transform: translate(-50%, -30%);
 }
-// .navbar-ul__mobile .nav-item:hover {
-//   color: $blue;
-//   // #2d9cdb
-//   font-weight: map-get($font-weights, bold);
-// }
+
 .nav-item {
   margin-left: 3.5rem;
   font-size: 2rem;
 }
 .navbar-ul__mobile .nav-item .navbar__link:hover {
   color: $blue;
-  // #2d9cdb
+
   font-weight: map-get($font-weights, bold);
 }
 .navbar__link {
@@ -59,7 +68,6 @@ nav {
 
   &:hover {
     color: $blue;
-    // #2d9cdb
   }
 }
 .menu {
@@ -72,6 +80,12 @@ nav {
   }
   .nav-desktop {
     display: flex;
+    width: 100%;
+  }
+
+  .nav-desktop--container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

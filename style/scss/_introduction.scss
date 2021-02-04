@@ -40,15 +40,14 @@
   }
   .purpose__text {
     grid-column: 1/5;
+    color: $gray-2;
+    margin: 3rem 0;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    grid-column: 1/6;
   }
 }
-.purpose__text {
-  color: $gray-2;
-  margin: 3rem 0;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  grid-column: 1/5;
-}
+
 .contactUs__text {
   grid-column: 1/6;
   margin: 1.5rem 0;
@@ -103,17 +102,9 @@
     .heading {
       font-size: 2.8em;
     }
-  }
-}
-@media (min-width: 456px) {
-  .introduction__text1 {
-    .heading {
-      font-size: 3em;
-    }
-  }
-  .introduction__text2 {
-    .heading {
-      font-size: 3em;
+
+    .purpose__text {
+      grid-column: 1/5;
     }
   }
 }
@@ -126,6 +117,10 @@
   .introduction__text2 {
     .heading {
       font-size: 3.3em;
+    }
+    .purpose__text {
+      font-size: 1.5rem;
+      grid-column: 1/4;
     }
   }
 }
@@ -150,11 +145,11 @@
     .heading {
       font-size: 4em;
     }
-  }
-  .purpose__text {
-    font-size: 1.8rem;
-    line-height: 1.5;
-    grid-column: 1/3;
+    .purpose__text {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      grid-column: 1/5;
+    }
   }
 
   .contactUs__text {
@@ -172,39 +167,22 @@
   }
 }
 
-//landscape screens
-@media (max-width: 770px) {
-  .customerComplain__link {
-    font-size: 1.5rem;
-  }
-  .heading {
-    font-size: 4rem;
-  }
-  .purpose__text {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    grid-column: 1/4;
-  }
-  .contactUs__text {
-    font-size: 1.4rem;
-  }
-
-  #email__input {
-    font-size: 1.8rem;
-  }
-  .btn {
-    padding: 0.6rem 2.3rem;
-    border-radius: 10px;
-    font-size: 1.8rem;
-    margin: 3px;
-  }
-}
 //tablet
-@media (min-width: 768px) {
+@media (min-width: 647px) {
+  .introduction__text2 {
+    .purpose__text {
+      grid-column: 1/4;
+    }
+  }
+}
+@media (min-width: 830px) {
+  .introduction__text2 {
+    .purpose__text {
+      grid-column: 1/3;
+    }
+  }
 }
 //desktop
-@media (min-width: 992px) {
-}
 
 //above 1200
 @media (min-width: 1230px) {
