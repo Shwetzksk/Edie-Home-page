@@ -9,6 +9,7 @@ const logo = document.querySelector('.mobile__logo');
 const menuBackground = document.querySelector('.menuBackground');
 const sections = document.querySelectorAll('.reveal-section');
 const navbar = document.querySelector('nav');
+const navbar__mobile = document.querySelector('.nav-mobile');
 const sectionIntro = document.querySelector('.introduction');
 const navLinks = document.querySelector('.navbar-ul');
 
@@ -56,7 +57,7 @@ navLinks.addEventListener('click', function (e) {
 const options = {
     root: null,
     threshold: 0.15,
-    // rootMargin: '-90px',
+    rootMargin: '90px',
 }
 function stickynav(entries) {
     const [entry] = entries;
@@ -64,8 +65,10 @@ function stickynav(entries) {
     if (!entry.isIntersecting) {
 
         navbar.classList.add('nav---sticky');
+        navbar__mobile.classList.add('nav---sticky');
     } else {
         navbar.classList.remove('nav---sticky');
+        navbar__mobile.classList.remove('nav---sticky');
     }
 }
 const navObserver = new IntersectionObserver(stickynav, options);

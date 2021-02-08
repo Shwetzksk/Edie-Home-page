@@ -2,8 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  height: 9rem;
+  height: 6rem;
   width: 100%;
 }
 .nav---sticky {
@@ -22,9 +21,9 @@ nav {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.95);
 
-  width: 100vw;
+  width: 95vw;
   overflow-x: hidden;
-  height: 200vh;
+  height: 100vh;
   z-index: 3;
 }
 .logo__text {
@@ -42,11 +41,12 @@ nav {
 .navbar-ul__mobile {
   z-index: 4;
   width: 15rem;
+  padding: 3rem 0;
   flex-direction: column;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, 0);
 }
 
 .nav-item {
@@ -90,6 +90,9 @@ nav {
 }
 
 @media (min-width: 576px) {
+  nav {
+    height: 9rem;
+  }
   .logo__text {
     font-size: 3.6rem;
   }

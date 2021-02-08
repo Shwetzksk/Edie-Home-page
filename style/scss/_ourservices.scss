@@ -1,5 +1,5 @@
 .ourServices {
-  margin: 10rem 0;
+  padding-top: 15rem;
 }
 .ourServices__heading {
   font-size: 2.4rem;
@@ -8,14 +8,12 @@
 }
 .card__container {
   display: flex;
-  // flex-direction: column;
-  margin: 6rem 0;
-  // justify-content: center;
+  margin-top: 6rem;
   flex-wrap: wrap;
 }
 .card {
   width: 34.1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
 
   &:hover {
@@ -89,19 +87,15 @@
 //ladscape
 @media (min-width: 576px) {
   .ourServices {
-    // margin: 15rem 2.5rem;
-    margin: 15rem 0 10rem 0;
-    // display: grid;
-    // grid-template-columns: 3rem repeat(8, 1fr);
+    padding-top: 18rem;
   }
+
   .ourServices__heading {
     font-size: 3.2rem;
     margin: 0;
-    // grid-column: 2/8;
   }
   .card__container {
     justify-content: space-between;
-    // grid-column: 2/10;
   }
 }
 //tablet
@@ -111,19 +105,5 @@
   }
   .card__container {
     justify-content: space-between;
-    // grid-column: 2/9;
   }
-}
-//desktop
-@media (min-width: 992px) {
-  // .ourServices {
-  //   grid-template-columns: 4rem repeat(8, 1fr);
-  // }
-}
-
-//above 1200
-@media (min-width: 1200px) {
-  // .card__container {
-  //   justify-content: space-around;
-  // }
 }

@@ -8,6 +8,9 @@
 .hidden {
   display: none;
 }
+body {
+  overflow-x: hidden;
+}
 .invisible {
   visibility: hidden;
 }
@@ -51,9 +54,7 @@ footer {
   width: 2.4rem;
   margin-right: 0.5rem;
 }
-// .footer__email {
-//   flex: 1 1 0;
-// }
+
 .pageCredit {
   color: $gray-5;
   margin: 5rem 0 0 0;
@@ -72,9 +73,7 @@ footer {
     display: grid;
     grid-template-columns: 4rem repeat(11, 1fr);
   }
-  // footer {
-  //   place-items: center;
-  // }
+
   .introduction {
     grid-column: 1/13;
   }
@@ -99,11 +98,4 @@ footer {
     justify-content: space-between;
     margin-left: auto;
   }
-}
-//desktop
-@media (min-width: 992px) {
-}
-
-//above 1200
-@media (min-width: 1200px) {
 }

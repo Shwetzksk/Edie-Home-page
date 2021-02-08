@@ -3,7 +3,7 @@
   grid-template-columns: 2.5rem repeat(8, 1fr);
   grid-template-rows: 1fr, 10fr, 1fr;
   align-items: center;
-  margin: 3rem 0;
+  padding: 1rem 0;
 }
 .introduction__text1 {
   grid-column: 2/10;
@@ -131,7 +131,6 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr, 10fr, 1fr;
     align-items: center;
-    margin: 3rem 0;
   }
   .customerComplain__link {
     font-size: 1.8rem;
@@ -182,7 +181,6 @@
     }
   }
 }
-//desktop
 
 //above 1200
 @media (min-width: 1230px) {
