@@ -1,5 +1,5 @@
 .previousProjects {
-  padding: 17rem 0;
+  padding: 8rem 0;
 }
 .project_card__container {
   display: flex;
@@ -41,6 +41,9 @@
 }
 
 @media (min-width: 576px) {
+  .previousProjects {
+    padding: 17rem 0;
+  }
   .previousProjects__header {
     margin-left: 0;
   }

@@ -249,7 +249,7 @@ nav {
   margin: 1.5rem 0;
   -webkit-columns: #828282;
           columns: #828282;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -553,7 +553,7 @@ nav {
 }
 
 .previousProjects {
-  padding: 17rem 0;
+  padding: 8rem 0;
 }
 
 .project_card__container {
@@ -608,6 +608,9 @@ nav {
 }
 
 @media (min-width: 576px) {
+  .previousProjects {
+    padding: 17rem 0;
+  }
   .previousProjects__header {
     margin-left: 0;
   }
@@ -759,7 +762,7 @@ nav {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  padding: 17rem 0;
+  padding: 7rem 0;
 }
 
 .testimony__text {
@@ -820,6 +823,9 @@ nav {
 }
 
 @media (max-width: 304px) {
+  .testimoninal {
+    padding: 8rem 0;
+  }
   .testimonial__nameText {
     font-size: 2.2rem;
   }
@@ -829,12 +835,18 @@ nav {
 }
 
 @media (min-width: 421px) {
+  .testimoninal {
+    padding: 10rem 0;
+  }
   .ourTeam_images img:nth-child(1) {
     width: 19rem;
   }
 }
 
 @media (min-width: 576px) {
+  .testimoninal {
+    padding: 17rem 0;
+  }
   .ourTeam {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
